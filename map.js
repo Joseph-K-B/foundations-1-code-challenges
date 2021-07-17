@@ -35,9 +35,10 @@ Output:
     { name: 'einstein', isHungry: true, type: 'cat' },
 ]*/
 export function makeArrayWithIsHungry(arr) {
-    // return arr.isHungry, arr.name, arr.type
-    // }
-    // makeArrayWithIsHungry(spot)
+    arr.map (item => {
+        arr.push({isHungry:item !== true})
+    });
+    return arr
 }
 /*
 Output:
@@ -50,6 +51,7 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
+    arr.map
     return [];
 }
 

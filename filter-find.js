@@ -1,7 +1,7 @@
 // Use the filter or find array methods to solve these problems
 
 
-const grocery =  [
+const groceries =  [
     { 
         id: 'apple',
         price: 3,
@@ -55,6 +55,7 @@ export function getAllDairy(arr) {
     let results = arr.filter(word => word.category === 'dairy')
     return results;
     }
+    
 
 
 /*
@@ -70,8 +71,11 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    return [];
+    let results = arr.filter(word => word.category === 'fruit' && word.price > 2);
+    console.log(results)
+    return results;
 }
+
 
 
 /*
@@ -85,7 +89,8 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    let results = arr.filter (item => item.id === 'cheese');
+    return results;
 }
 
 
@@ -95,5 +100,9 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    return [];
+    let empty = [];
+    arr.filter (item => { 
+    empty.push(item.category === 'fruit', item.id)
+})
+    return empty;
 }
