@@ -1,8 +1,7 @@
 // Use the filter or find array methods to solve these problems
 
-/* 
-Input:
-[
+
+const grocery =  [
     { 
         id: 'apple',
         price: 3,
@@ -35,7 +34,7 @@ Input:
     },
 ]
 
-Output: 
+/*Output: 
 [
     { 
         id: 'milk',
@@ -53,8 +52,10 @@ Output:
 */
 
 export function getAllDairy(arr) {
-    return [];
-}
+    let results = arr.filter(word => word.category === 'dairy')
+    return results;
+    }
+
 
 /*
 Output: 
