@@ -1,7 +1,7 @@
 // Use the map method to solve these problems!
 
-/*
-Input:
+
+const dogs = 
 
 [
     { name: 'spot', type: 'dog' },
@@ -10,7 +10,6 @@ Input:
     { name: 'einstein', type: 'cat' },
 ]
 
-*/
 
 /*
 Output:
@@ -19,7 +18,11 @@ Output:
 */
 
 export function makeArrayOfNamesWithMap(arr) {
-    return [];
+    let names = [];
+    arr.map(item => {
+        names.push(item.name)
+    });
+    return names;
 }
 
 /*
@@ -33,7 +36,11 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    let isHungry = [];
+    arr.map (item => {
+    dogs.push(isHungry)
+    })
+    return isHungry;
 }
 
 /*
