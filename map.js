@@ -34,9 +34,8 @@ Output:
     { name: 'einstein', isHungry: true, type: 'cat' },
 ]*/
 export function makeArrayWithIsHungry(arr) {
-    let hungry = arr.map (item => ({isHungry:item !==true}))
-         arr.push(hungry)
-         return arr;
+    let hungry = arr.map (item => Object.assign(item, {isHungry: true}))
+         return hungry;
      };
 
 /*
