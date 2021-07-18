@@ -22,7 +22,6 @@ export function makeArrayOfNamesWithMap(arr) {
     arr.map(item => {
         names.push(item.name)
     });
-    console.log(names)
     return names;
 }
 /*
@@ -35,11 +34,11 @@ Output:
     { name: 'einstein', isHungry: true, type: 'cat' },
 ]*/
 export function makeArrayWithIsHungry(arr) {
-    arr.map (item => {
-        arr.push({isHungry:item !== true})
-    });
-    return arr
-}
+    let hungry = arr.map (item => ({isHungry:item !==true}))
+         arr.push(hungry)
+         return arr;
+     };
+
 /*
 Output:
 
@@ -51,11 +50,14 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    arr.map (item => {
-        
-    })
-    return [];
+    let name = arr.map (item => item.name)
+    let shout = arr.map(name.toUppercase());
+    console.log(name);
+    console.log(shout)
+    return shout;
+    
 }
+
 
 
 /*
@@ -65,6 +67,7 @@ Output:
 */
 
 export function makeStringArray(arr) {
+    arr.map
     return [];
 }
 

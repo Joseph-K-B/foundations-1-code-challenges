@@ -88,7 +88,7 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    let results = arr.filter (item => item.id === 'cheese');
+    let results = arr.find (item => item.id === 'cheese');
     return results;
 }
 
@@ -100,6 +100,8 @@ Output:
 
 export function listNamesOfAllFruits(arr) {
     let names = arr.filter (item => item.category === 'fruit')
+    let result = names.find (item => item.id)
     console.log(names)
-    return names;
+    console.log(result)
+    return result;
 }

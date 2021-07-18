@@ -88,7 +88,7 @@ test
     expect.deepEqual(actual, expected);
 });
 
-skip('should return the cheese', (expect) => {
+test('should return the cheese', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = { 
