@@ -2,31 +2,31 @@
 
 
 const groceries =  [
-    { 
+    {
         id: 'apple',
         price: 3,
         quantity: 2,
         category: 'fruit'
     },
-    { 
+    {
         id: 'banana',
         price: 1,
         quantity: 3,
         category: 'fruit'
     },
-    { 
+    {
         id: 'dog food',
         price: 5,
         quantity: 1,
         category: 'other'
     },
-    { 
+    {
         id: 'milk',
         price: 2,
         quantity: 1,
         category: 'dairy'
     },
-        { 
+        {
         id: 'cheese',
         price: 4,
         quantity: 4,
@@ -34,15 +34,15 @@ const groceries =  [
     },
 ]
 
-/*Output: 
+/*Output:
 [
-    { 
+    {
         id: 'milk',
         price: 2,
         quantity: 1,
         category: 'dairy'
     },
-        { 
+        {
         id: 'cheese',
         price: 4,
         quantity: 4,
@@ -55,13 +55,13 @@ export function getAllDairy(arr) {
     let results = arr.filter(word => word.category === 'dairy')
     return results;
     }
-    
+
 
 
 /*
-Output: 
+Output:
 [
-    { 
+    {
         id: 'apple',
         price: 3,
         quantity: 2,
@@ -78,8 +78,8 @@ export function getAllFruitsThatCostMoreThanTwo(arr) {
 
 
 /*
-Output: 
-    { 
+Output:
+    {
         id: 'cheese',
         price: 4,
         quantity: 4,
@@ -94,14 +94,13 @@ export function findTheCheese(arr) {
 
 
 /*
-Output: 
+Output:
 ['apple', 'banana']
 */
-
+//map category?
 export function listNamesOfAllFruits(arr) {
-    let names = arr.filter (item => item.category === 'fruit')
-    let result = names.find (item => item.id)
+    let names = arr.filter ((item) => item.category === 'fruit')
+    // let result = names.find (item => item.id)
     console.log(names)
-    console.log(result)
-    return result;
+    return names.map(item => `${item.id}`);
 }

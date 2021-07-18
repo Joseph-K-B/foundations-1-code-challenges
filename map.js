@@ -91,5 +91,6 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    let arrOfArr = arr.map((item) => `[${item.name},${item.type}]`)
+    return arrOfArr;
 }
