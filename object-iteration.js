@@ -24,7 +24,8 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+    let results = someObject.key(item => item.key === item.random)
+    return results;
 }
 
 

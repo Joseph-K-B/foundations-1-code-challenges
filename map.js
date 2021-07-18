@@ -51,7 +51,9 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    arr.map
+    arr.map (item => {
+        
+    })
     return [];
 }
 

@@ -72,7 +72,6 @@ Output:
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
     let results = arr.filter(word => word.category === 'fruit' && word.price > 2);
-    console.log(results)
     return results;
 }
 
@@ -100,9 +99,7 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    let empty = [];
-    arr.filter (item => { 
-    empty.push(item.category === 'fruit', item.id)
-})
-    return empty;
+    let names = arr.filter (item => item.category === 'fruit')
+    console.log(names)
+    return names;
 }
