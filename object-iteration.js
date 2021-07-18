@@ -23,9 +23,8 @@ etc
 (we cannot control the order that these appear in without extra work, so any of these outputs are acceptable)
 */
 
-export function makeWeirdStringFromKeys(someObject) {
-    let results = someObject.value(item => item.key === item.random)
-    return results;
+export function makeWeirdStringFromKeys(someObject) { 
+    return Object.keys(someObject)
 }
 
 
@@ -39,7 +38,8 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    let scream = Object.keys(item => {return item.keys.toUpperCase(), item.values})
+    return scream
 }
 
 /*
